@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        
+        <title>World Crises</title>
+        <style>
+            body{
+                background-image: url(https://i.imgur.com/vcrAfOq.jpg), url(https://i0.wp.com/www.redlogenv.com/wp-content/uploads/2016/06/fumes-1211453-639x424.jpg?resize=639%2C380);
+                background-position: 70%;
+                background-color: #939393;
+            }
+          
+            </style>
+    </head>
+   
+    <body onload='init()'>
+        <header>
+            <nav>
+            <div id= "header">
+                
+            <div class="topnav" id="myTopnav">
+            <a href ="index.html" class="active">Home</a>
+            <a href = "worldmap.html">Earth</a>
+            <a href="facts/index.html">Facts</a>
+            <a href="construction/index.html" target="_blank">*Under construction*</a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+             </a>
+            </div>
+  
+        
+            </div>
+        </header>
+    
+        <main>
+            <article>
+                <div id="container">
+                <div id= "world_map">
+                    <div class="earth">
+                        <div></div>
+                      </div>
+    <!--This is where we'll put all the code for the world.-->
+                </div>
+                <div id ="info">
+                    <p id="content"> </p> 
+        <!-- This is where we'll put all the info-->
+                  </div>
+
+                  </div>        
+            </article>
+            <form id="continents" onsubmit="return nosubmit()">
+                <label for="continents">Choose a continent</label>
+                <select name="continents">
+                  <option value="africa" selected>Africa</option>
+                  <option value="australia">Australia</option>
+                  <option value="asia">Asia</option>
+                  <option value="europe">Europe</option>
+                  <option value="northamerica">North America</option>
+                  <option value="southamerica">South America</option>
+                </select>
+                <br><br>
+                <button value="Submit" id="submitButton">Submit</button>
+              </form>
+              
+    </div></div>            
+  </div>                
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
